@@ -30,13 +30,13 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     }
 });
 
-document.querySelector('body').addEventListener('touchstart', function() {
+document.querySelector('body').addEventListener('touchenter', function() {
 	
 	var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
-    	var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
-    	if(question == ansnum){
+    var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
+    if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
     		document.body.style.backgroundImage = "url(./images/ep_naturalwhite.png) repeat";
