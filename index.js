@@ -32,11 +32,10 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 
 document.querySelector('body').addEventListener('touchstart', function (e) {
 	
-	var key = e.which || e.keyCode;
-    var fnum = Math.floor(Math.random() * 11);
+	var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
-    if (key === 13) { 
+    if (e == "touchstart") { 
     	var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
