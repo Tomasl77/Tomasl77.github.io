@@ -15,7 +15,7 @@ function intro() {
 }
 
 document.querySelector('body').addEventListener('keypress', function (e) {
-    var key = e.which || e.keyCode || touchstart;
+    var key = e.which || e.keyCode || e.touchstart;
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
