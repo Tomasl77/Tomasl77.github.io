@@ -29,9 +29,3 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     	else alert('Verification failed. Please, try again !!');
     }
 });
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    document.getElementById('intro').style.display = 'none';
-	document.getElementById('suite').style.display = 'block';
-	document.body.style.backgroundImage = "url(./images/ep_naturalwhite.png) repeat";
-};
