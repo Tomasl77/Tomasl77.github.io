@@ -173,6 +173,10 @@ body {
 	#simp {
 		display: none;
 	}
+
+	#entete {
+		width: 300px;
+	}
 }
 
 @media screen AND (max-width: 576px) {
