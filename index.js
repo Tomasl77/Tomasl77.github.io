@@ -1,8 +1,8 @@
 var txtintro = "Press enter!";
 
-
 function intro() {
-	document.getElementById('suite').style.display = 'none'
+	document.getElementById('suite').style.display = 'none';
+	document.getElementById('intro').style.backgroundColor = "black";
 	display = document.getElementById('intro');
 
 	for(var i = 0, l = txtintro.length; i < l; i++) {
@@ -16,17 +16,15 @@ function intro() {
 
 document.querySelector('body').addEventListener('keypress', function (e) {
     var key = e.which || e.keyCode;
-    var randnum1 = Math.floor(Math.random() * 11);
-    var randnum2 = Math.floor(Math.random() * 11);
-    var fnum = randnum1;
-    var snum = randnum2;
+    var fnum = Math.floor(Math.random() * 11);
+    var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
     if (key === 13) { 
     	var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
-    		document.body.style.backgroundColor = 'white'
+    		document.body.style.backgroundImage = "url(./images/ep_naturalwhite.png) repeat";
     	}
     	else alert('Verification failed. Please, try again !!');
     }

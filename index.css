@@ -33,12 +33,7 @@ responsive design : MEDIA QUERIES;
 	box-sizing: border-box;
 	
 }
-html{
-	height: 100%;
-}
-
 body {
-	background-color: #000000;
 	font-family: 'whtrab';
 	min-height: 100%;
 }
@@ -49,6 +44,7 @@ body {
 
 #intro {
 	color: #00CC00;
+	min-height: 100vh;
 }
 
 /**********************
@@ -60,7 +56,6 @@ body {
 }
 
 #header {
-	background-color: white;
 	border:2px solid red;
 	display: flex;
 	justify-content: space-between;
