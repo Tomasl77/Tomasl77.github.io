@@ -32,16 +32,8 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 
 document.querySelector('body').addEventListener('touchenter', function() {
 	
-	var fnum = Math.floor(Math.random() * 11);
-    var snum = Math.floor(Math.random() * 11);
-    var ansnum = fnum + snum;
-    if (touchenter === true) {
-    var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
-    if(question == ansnum){
-	    	document.getElementById('intro').style.display = 'none';
-    		document.getElementById('suite').style.display = 'block';
-    		document.body.style.backgroundImage = "url(./images/ep_naturalwhite.png) repeat";
-    	}
-    	else alert('Verification failed. Please, try again !!');
-    }
+    document.getElementById('intro').style.display = 'none';
+	document.getElementById('suite').style.display = 'block';
+	document.body.style.backgroundImage = "url(./images/ep_naturalwhite.png) repeat";
 });
+	
