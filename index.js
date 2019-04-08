@@ -30,12 +30,11 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     }
 });
 
-document.querySelector('body').addEventListener('touchstart', function (e) {
+document.querySelector('body').addEventListener('touchstart') {
 	
 	var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
-    if (e == "touchstart") { 
     	var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
