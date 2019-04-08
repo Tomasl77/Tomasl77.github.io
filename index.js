@@ -30,10 +30,8 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     }
 });
 
-document.querySelector('body').addEventListener('touchenter', function() {
-	
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     document.getElementById('intro').style.display = 'none';
 	document.getElementById('suite').style.display = 'block';
 	document.body.style.backgroundImage = "url(./images/ep_naturalwhite.png) repeat";
-});
-	
+};
