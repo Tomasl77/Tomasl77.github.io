@@ -30,7 +30,7 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     }
 });
 
-document.querySelector('body').addEventListener('touchenter', function (e) {
+document.querySelector('body').addEventListener('touchstart', function (e) {
 	
 	var key = e.which || e.keyCode;
     var fnum = Math.floor(Math.random() * 11);
