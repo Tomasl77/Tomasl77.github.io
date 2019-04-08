@@ -35,7 +35,7 @@ document.querySelector('body').addEventListener('touchenter', function() {
 	var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
-    if (touchenter == true) {
+    if (touchenter === true) {
     var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
     if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
