@@ -1,8 +1,9 @@
 var txtintro = "Press enter!";
 
 function intro() {
-	document.getElementById('suite').style.display = 'none';
+	document.getElementById('intro').style.display = 'block';
 	document.getElementById('intro').style.backgroundColor = "black";
+	document.getElementById('suite').style.display = 'none';
 	display = document.getElementById('intro');
 
 	for(var i = 0, l = txtintro.length; i < l; i++) {

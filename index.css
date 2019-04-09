@@ -45,6 +45,7 @@ body {
 #intro {
 	color: #00CC00;
 	min-height: 100vh;
+	display: none;
 }
 
 /**********************
