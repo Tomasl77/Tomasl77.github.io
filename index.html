@@ -26,9 +26,18 @@
 		
 		<!-- Header end-->
 
+<div id="navimg"> <!-- Images boxes -->
+			
+			<img src="./img/char.svg" alt="personnal infos" class="carre" onclick="writetitle('Informations personnelles'); writecorps('<div class=\'desc\'><span class =\'inti\'>Adresse :</span> 25 Avenue de rebais <br />77640 Jouarre <br><br /><span class =\'inti\'>Contact :</span> <img src=\'./img/phone.svg\' class=\'icons\' alt=\'phone\'> 06.79.64.08.55 <br> <img src=\'./img/mail.svg\' class=\'icons\' alt=\'mail\'> : lobgeois.tomas@free.fr <br /> <img src=\'./img/car.svg\' class=\'icons\' alt=\'car\'>Permis B & Véhiculé</div>')">
+			<img src="./img/grade.svg" alt="school path" class="carre" onclick="writetitle('Formations'); writecorps('corps2')">
+			<img src="./img/prof.svg" alt="carrer path" class="carre" onclick="writetitle('Exp&eacute;riences professionnelles'); writecorps('corps3')">
+			<img src="./img/project.svg" alt="projets" class="carre" onclick="writetitle('Projets r&eacute;alis&eacute;s'); writecorps('corps4')">
+			<img src="./img/share.svg" alt="social" class="carre" onclick="writetitle('O&ugrave; me trouver'); writecorps('corps5')">
+		</div>
+
 		<div id="container"> <!-- Main container -->
 
-			<div id="myfile" class="pane"> <!-- Start pane  -->
+			<div id="myfile" class="pane"> <!-- Start panes  -->
 
 				<div id="leftpane">
 					<img src="./img/photo.png" alt="mypicture" id="mypic">
@@ -36,22 +45,15 @@
 				<div id="rightpane" class="pane">
 					<div id="infos">
 						<p id="title"></p>
-						<p id="corps">o <br><br><br><br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br>o <br><br><br><br>o <br></p>
+						<p id="corps"></p>
 					</div>
 				</div>
 
-			</div> <!-- End pane  -->
+			</div> <!-- End panes  -->
 		
 		</div> <!-- Main container end -->
 	
-		<div id="footimg"> <!-- Images boxes -->
-			
-			<img src="./img/char.svg" alt="personnal infos" class="carre" onmouseenter="writetitle('Informarions personnelles'); writecorps('<div class=\'desc\'><span class =\'inti\'>Adresse :</span> 25 Avenue de rebais <br />77640 Jouarre <br><br /><span class =\'inti\'>Contact :</span> <img src=\'./img/phone.svg\' class=\'icons\' alt=\'phone\'> 06.79.64.08.55 <br> <img src=\'./img/mail.svg\' class=\'icons\' alt=\'mail\'> : lobgeois.tomas@free.fr <br /> <img src=\'./img/car.svg\' class=\'icons\' alt=\'car\'>Permis B & Véhiculé</div>')">
-			<img src="./img/grade.svg" alt="school path" class="carre" onmouseenter="writetitle('Formations'); writecorps('corps2')">
-			<img src="./img/prof.svg" alt="carrer path" class="carre" onmouseenter="writetitle('Exp&eacute;riences professionnelles'); writecorps('corps3')">
-			<img src="./img/project.svg" alt="projets" class="carre" onmouseenter="writetitle('Exp&eacute;riences professionnelles'); writecorps('corps4')">
-			<img src="./img/share.svg" alt="social" class="carre" onmouseenter="writetitle('O&ugrave; me trouver'); writecorps('corps5')">
-		</div>
+		
 
 	</div>
 	<script src="index.js"></script>
