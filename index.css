@@ -43,6 +43,7 @@ https://www.flaticon.com/authors/zlatko-najdenovski
 body {
 	font-family: 'whtrab';
 	min-height: 100%;
+	background-image: url(./img/ep_naturalwhite.png);
 }
 
 /***********************
@@ -107,7 +108,6 @@ body {
 
 
 #container {
-	background-color: #EDEDED;
 	border: 2px solid purple;
 	max-height: 600px;
 }

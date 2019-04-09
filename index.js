@@ -25,12 +25,11 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
-    		document.body.style.backgroundImage = "url(./images/ep_naturalwhite.png) repeat";
+    		document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
     	}
     	else alert('Verification failed. Please, try again !!');
     }
 });
-
 
 function writetitle(txt){
 	document.getElementById('title').style.display = ('block');
