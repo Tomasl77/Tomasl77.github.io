@@ -30,3 +30,8 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     	else alert('Verification failed. Please, try again !!');
     }
 });
+
+
+function writetitle(txt){
+	document.getElementById('title').innerHTML = txt;
+}

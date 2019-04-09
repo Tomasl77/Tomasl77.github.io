@@ -130,7 +130,7 @@ body {
 	margin-top: 50px;
 }
 
-#entete {
+#title {
 	margin: auto;
 	margin-top: 5px;
 	text-align: center;
@@ -192,7 +192,7 @@ body {
 		display: none;
 	}
 
-	#entete {
+	#title {
 		width: 300px;
 	}
 }
