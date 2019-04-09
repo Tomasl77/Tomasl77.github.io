@@ -107,13 +107,13 @@ body {
 #container {
 	background-color: #EDEDED;
 	border: 2px solid purple;
-	max-height: 800px;
+	max-height: 600px;
 }
 
 #leftpane {
 	flex: 1;
 	border: 2px solid pink;
-	overflow: hidden;
+	display: flex;
 }
 
 #rightpane{
@@ -131,9 +131,7 @@ body {
 #mypic {
 	height: 400px;
 	width: 300px;
-	margin-left: 50%;
-	margin-top: 25%;
-	transform: translate(-50%, -25%);
+	margin: auto;
 }
 
 #title {
@@ -153,7 +151,7 @@ body {
 
 #corps {
 	overflow-y: auto;
-	max-height: 800px;
+	max-height: 600px;
 	}
 
 /********************
@@ -178,6 +176,11 @@ body {
 
 .carre:hover{ 
 	border: 3px double #930B23;
+}
+
+.icons {
+	height: 25px;
+	width: 25px;	
 }
 
 
@@ -210,9 +213,6 @@ body {
 	#mypic {
 		height: 300px;
 		width: 200px;
-		margin-left: 50%;
-		transform: translateX(-50%);
-		margin-top: 50px;
 	}
 	
 	#corps {
@@ -247,7 +247,6 @@ body {
 	#mypic {
 		height: 100px;
 		width: 75px;
-		margin-top: 10px;
 	}
 
 	#container .pane{
