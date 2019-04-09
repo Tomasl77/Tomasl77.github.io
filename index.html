@@ -35,11 +35,8 @@
 				</div>
 				<div id="rightpane" class="pane">
 					<div id="infos">
-						<p id="title"> Renseignements personnels</p>
-						<p>Nom : LOBGEOIS</p>
-						<p>Prénom : Tomas</p>
-						<p>Date de naissance : 8 juillet 1986</p>
-						<p>Lieu de naissance : Chateau-Thierry (02)</p>
+						<p id="title"></p>
+						<p id="corps">o <br><br><br><br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br><br>o <br><br><br><br>o <br><br><br><br><br>o <br><br><br><br>o <br></p>
 					</div>
 				</div>
 
@@ -49,10 +46,11 @@
 	
 		<div id="footimg"> <!-- Images boxes -->
 			
-			<img src="./img/char.svg" alt="personnal infos" class="carre" onmouseenter="writetitle('pouet')" onmouseout="writetitle('Continuez')">
-			<img src="./img/grade.svg" alt="school path" class="carre" onmouseenter="writetitle('Formations')" onmouseout="writetitle('Continuez')">
-			<img src="./img/prof.svg" alt="carrer path" class="carre" onmouseenter="writetitle('Exp&eacute;riences professionnelles')" onmouseout="writetitle('Continuez')">
-			<img src="./img/share.svg" alt="social" class="carre" onmouseenter="writetitle('O&ugrave; me trouver')" onmouseout="writetitle('Continuez')">
+			<img src="./img/char.svg" alt="personnal infos" class="carre" onmouseenter="writetitle('Informarions personnelles'); writecorps('<div class=\'desc\'><span class =\'inti\'>Adresse :</span> 25 Avenue de rebais <br />77640 Jouarre <br><br /><span class =\'inti\'>Contact :</span> <img src=\'./images/phone.svg\' id=\'tel\' alt=\'phone\'> 06.79.64.08.55 <br> <img src=\'./images/mail.svg\' id=\'mail\' alt=\'mail\'> : lobgeois.tomas@free.fr <br /> <img src=\'./images/car.svg\' id=\'car\' alt=\'car\'>Permis B & Véhiculé</div>')">
+			<img src="./img/grade.svg" alt="school path" class="carre" onmouseenter="writetitle('Formations'); writecorps('corps2')">
+			<img src="./img/prof.svg" alt="carrer path" class="carre" onmouseenter="writetitle('Exp&eacute;riences professionnelles'); writecorps('corps3')">
+			<img src="./img/project.svg" alt="projets" class="carre" onmouseenter="writetitle('Exp&eacute;riences professionnelles'); writecorps('corps4')">
+			<img src="./img/share.svg" alt="social" class="carre" onmouseenter="writetitle('O&ugrave; me trouver'); writecorps('corps5')">
 		</div>
 
 	</div>

@@ -33,5 +33,10 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 
 
 function writetitle(txt){
+	document.getElementById('title').style.display = ('block');
 	document.getElementById('title').innerHTML = txt;
+}
+
+function writecorps(txt) {
+	document.getElementById('corps').innerHTML = txt;
 }
