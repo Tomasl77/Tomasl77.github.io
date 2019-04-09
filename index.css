@@ -144,6 +144,28 @@ body {
 	font-size: 20px;
 }
 
+/********************
+***** Box footer ****
+********************/
+
+
+#footimg {
+	margin-top: 20px;
+	width: 100%;
+	border: 2px solid green;
+	display: flex;
+}
+
+.carre {
+	height: 100px;
+	width: 100px;
+	/*border: 5px dotted yellow;*/
+	margin:auto;
+	justify-content: space-between;
+}
+
+
+
 /**************************
 ****** MEDIA QUERIES ******
 **************************/
