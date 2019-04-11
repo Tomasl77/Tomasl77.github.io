@@ -153,9 +153,8 @@ body {
 
 .desc{
 	font-size: 25px;
-	/*margin-top: 5%;*/
 	margin-left: 5%;
-	line-height: 1.5;
+	line-height: 40px;
 }
 
 .inti{
