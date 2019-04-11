@@ -171,6 +171,24 @@ body {
 	max-height: 600px;
 }
 
+.halfsize {
+	border: 2px solid green;
+	display: flex;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.flextriple {
+	flex:3;
+}
+
+
 /********************
 ***** BOX FOOTER ****
 ********************/
@@ -199,6 +217,11 @@ body {
 	height: 25px;
 	width: 25px;	
 }
+
+.icons:last-child {
+	transform: translateY(5px);
+}
+
 
 
 /**************************
