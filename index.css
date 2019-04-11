@@ -120,8 +120,7 @@ body {
 
 #rightpane{
 	flex: 3;
-	border: 2px solid orange;
-	
+	border: 2px solid orange;	
 }
 
 #myfile {
@@ -199,11 +198,9 @@ body {
 	flex: 1;
 }
 
-.flextriple {
-	flex:3;
+.inside li {
+	list-style-position: inside;
 }
-
-
 /********************
 ***** BOX FOOTER ****
 ********************/
