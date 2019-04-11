@@ -121,7 +121,6 @@ body {
 #rightpane{
 	flex: 3;
 	border: 2px solid orange;
-	
 }
 
 #myfile {
@@ -179,24 +178,17 @@ body {
 .row {
 	display: flex;
 	flex-direction: row;
+	border: 2px solid red;
 }
 
 .col {
 	display: flex;
 	flex-direction: column;
-}
-
-.mar-ten {
-	margin:10px 0px;
-}
-
-.right-bor{
-	border-right: 2px solid black;
-	margin-right: 5px;
+	border: 2px solid blue;
 }
 
 .flexone {
-	flex: 1;
+	flex:1;
 }
 
 .flextriple {
