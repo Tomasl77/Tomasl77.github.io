@@ -200,6 +200,15 @@ body {
 .inside li {
 	list-style-position: inside;
 }
+
+#icones{
+	text-align: center;
+}
+
+.desc a {
+    text-decoration: none;
+}    
+
 /********************
 ***** BOX FOOTER ****
 ********************/
