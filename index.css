@@ -308,10 +308,6 @@ button:active{
 
 @media screen AND (max-width: 992px)  {
 
-	#header{
-		height:100%;
-		background-color: blue;
-	}
 
 	#header img {
 		width: 150px;
@@ -359,11 +355,6 @@ button:active{
 
 @media screen AND (max-width: 576px) {
 	
-	#header{
-	height:100%;
-	background-color: green;
-	}
-
 	#header img {
 		width: 90px;
 		height: 70px;
