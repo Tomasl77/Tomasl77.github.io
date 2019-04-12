@@ -110,20 +110,7 @@ function sql() {
     }
   }
 }
-function anglais() {
-  var elem6 = document.getElementById("6");   
-  var width = 0;
-  var id = setInterval(frame, 50);
-  function frame() {
-    if (width >= 85) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem6.style.width = width + '%'; 
-      elem6.innerHTML = width * 1  + '%';
-    }
-  }
-}
+
 
 function changeBg(){
 var y = document.getElementsByClassName("bar");
