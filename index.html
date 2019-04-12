@@ -33,8 +33,8 @@
 
 			<img src="./img/char.svg" alt="personnal infos" class="carre" onclick="writetitle('Informations personnelles'); writecorps('\
 				<div class=\'desc\'>\
-					<span class =\'inti\'>Adresse :<br></span> 25 Avenue de rebais <br />77640 Jouarre <br>\
-					<span class =\'inti\'>Contact :</span>\
+					<span class =\'titre\'>Adresse :<br></span> 25 Avenue de rebais <br />77640 Jouarre <br>\
+					<span class =\'titre\'>Contact :</span>\
 						<br><img src=\'./img/phone.svg\' class=\'icons\' alt=\'phone\'> 06.79.64.08.55 \
 						<br> <img src=\'./img/mail.svg\' class=\'icons\' alt=\'mail\'> : lobgeois.tomas@free.fr\
 						<br> <img src=\'./img/car.svg\' class=\'icons\' alt=\'car\'>Permis B & Véhiculé\
@@ -43,7 +43,17 @@
 
 <!-- Second square : School Path -->
 
-			<img src="./img/grade.svg" alt="school path" class="carre" onclick="writetitle('Formations'); writecorps('corps2')">
+			<img src="./img/grade.svg" alt="school path" class="carre" onclick="writetitle('Formations'); writecorps('\
+				<div id=\'scpath\'>\
+					<div class=\'halfsize col\'>\
+						<div class=\'row flexone mar-ten\'>\
+							<div class=\'col flexone right-bor\'>\
+								<p class=\'titre\'>Formations :</p><b>2018 :</b><br /> Formation Développeur Web : coder et déployer une application web simple (Simplon)<br /><br /><b>2007 - 2008 :</b><br />L2 STAPS (Sciences et Techniques des Activités Physique et Sportives)<br /><br /><b>2006 :</b><br /> Baccalauréat Scientifique\
+							</div>\
+							<div class=\'col flexone\'>\
+							<div class=\'barcon\'><div class=\'titre2\'>Langages : </div><br /> <div class=\'load\'><span class=\'codela\'>HTML</span><span class=\'loadbar\'><div id=\'pouet\'><div id=\'myProgress\'><div class=\'bar\' id=\'1\'>0%</div></div>  </div></span></div><div class=\'load\'><span class=\'codela\'>CSS</span><span class=\'loadbar\'><div id=\'myProgress\'><div class=\'bar\' id=\'2\'>0%</div></div></span></div><div class=\'load\'><span class=\'codela\'>Javascript</span><span class=\'loadbar\'><div id=\'myProgress\'><div class=\'bar\' id=\'3\'>0%</div>  </div></span></div><br /> <div class=\'titre2\'>Base de données : </div><br /> <div class=\'load\'><span class=\'codela\'>SQL</span><span class=\'loadbar\'><div id=\'myProgress\'><div class=\'bar\' id=\'4\'>0%</div></div></span></div><div class=\'load\'><span class=\'codela\'>PHP</span><span class=\'loadbar\'><div id=\'myProgress\'><div class=\'bar\' id=\'5\'>0%</div></div></span></div><br /> <div class=\'titre2\'>Langues: </div><br /> <div class=\'load\'><span class=\'codela\'>Anglais</span><span class=\'loadbar\'><div id=\'myProgress\'><div class=\'bar\' id=\'6\'>0%</div></div></span></div><div class=\'butto\'><button id=\'butto\'onclick=\'html(), css(), js(), php(), sql(), anglais(), changeBg()\'>Afficher mes compétences</button></div></div>\
+						</div>\
+				</div>')">
 
 
 <!-- Third square : Career Path -->
