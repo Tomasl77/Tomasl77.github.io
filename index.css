@@ -133,6 +133,7 @@ body {
 	height: 400px;
 	width: 300px;
 	margin: auto;
+	cursor: pointer;
 }
 
 #title {
@@ -267,7 +268,7 @@ button:active{
 }
 
 /********************
-***** BOX FOOTER ****
+**** BOXS NAVBAR ****
 ********************/
 
 
@@ -283,6 +284,7 @@ button:active{
 	width: 100px;
 	margin:auto;
 	justify-content: space-between;
+	cursor: pointer;
 }
 
 
