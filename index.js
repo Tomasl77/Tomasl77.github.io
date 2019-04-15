@@ -15,34 +15,38 @@ function intro() {
 	}	
 }
 
-document.querySelector('body').addEventListener('keypress', function (e) {
+document.querySelector('#intro').addEventListener('keypress', function (e) {
     var key = e.which || e.keyCode;
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
     if (key === 13) { 
-    	var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
+      var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
     		document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+        var validEnter = 1;
     	}
     	else alert('Verification failed. Please, try again !!');
     }
 });
 
-document.querySelector('body').addEventListener('touchstart', function () {
+document.querySelector('#intro').addEventListener('touchstart', function () {
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
-    var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
-      if(question == ansnum){
-        document.getElementById('intro').style.display = 'none';
-        document.getElementById('suite').style.display = 'block';
-        document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+      if(validEnter === 0) {
+      var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
+        if(question == ansnum){
+          document.getElementById('intro').style.display = 'none';
+          document.getElementById('suite').style.display = 'block';
+          document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+          var validEnter = 1
+        }
       }
       else alert('Verification failed. Please, try again !!');
-    });
+});
 
 
 function writetitle(txt){
