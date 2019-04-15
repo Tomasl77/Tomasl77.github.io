@@ -145,11 +145,10 @@ body {
 	width: 350px;
 	background-color: #D80503;
 	opacity: 0.8;
-	border-radius: 20% 10%;
 	border: outset;
 	color: white;
 	height: 35px;
-	font-size: 20px;
+	font-size: 22.5px;
 }
 
 .desc{
@@ -258,7 +257,7 @@ button{
 	width: 40%;
 	display: block;
 	margin: auto;
-	background-color: #930B23;
+	background-color: #D80503;
 	opacity: 0.8;
 	border-radius: 20% 10%;
 	border: outset;
@@ -290,9 +289,16 @@ button:active{
 	cursor: pointer;
 }
 
+.center {
+	text-align: center;
+}
 
 .carre:hover{ 
-	
+	opacity: 0.5;
+}
+
+.carre:active {
+	color: red;
 }
 
 .icons {
@@ -339,7 +345,7 @@ button:active{
 
 	#title {
 		width: 300px;
-		height:35px ;
+		height:25px ;
 		font-size: 15px;
 	}
 	

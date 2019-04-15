@@ -64,7 +64,7 @@ function html() {
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
-    if (width >= 80) {
+    if (width >= 90) {
       clearInterval(id);
     } else {
       width++; 
@@ -78,7 +78,7 @@ function css() {
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
-    if (width >= 80) {
+    if (width >= 90) {
       clearInterval(id);
     } else {
       width++; 
