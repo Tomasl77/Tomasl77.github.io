@@ -1,4 +1,4 @@
-var txtintro = "Press enter!";
+var txtintro = "Acces database in progress . . .";
 
 function intro() {
 	document.getElementById('intro').style.display = 'block';
@@ -10,7 +10,7 @@ function intro() {
 	(function(i) {
 		setTimeout(function() {
 			display.innerHTML += txtintro.charAt(i);
-			}, i * 200);
+			}, i * 40);
 		}(i));
 	}	
 }
@@ -30,6 +30,20 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     	else alert('Verification failed. Please, try again !!');
     }
 });
+
+document.querySelector('body').addEventListener('touchstart', function () {
+    var fnum = Math.floor(Math.random() * 11);
+    var snum = Math.floor(Math.random() * 11);
+    var ansnum = fnum + snum;
+    var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
+      if(question == ansnum){
+        document.getElementById('intro').style.display = 'none';
+        document.getElementById('suite').style.display = 'block';
+        document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+      }
+      else alert('Verification failed. Please, try again !!');
+    });
+
 
 function writetitle(txt){
 	document.getElementById('title').style.display = ('block');
@@ -119,3 +133,31 @@ for (i = 0; i < y.length; i++) {
   y[i].style.backgroundColor = 'rgb(55,69,77)';
   }
  }
+
+
+
+/*
+*************Test for regroup bar*****************
+
+var skillBar = ["barone","bartwo","barthree","barfour","barfive"];
+var percentBar = [80, 80, 50, 30, 30];
+
+function skill() {
+  for (var j = 0; j < skillBar.length; j++) {
+    var elem = document.getElementById(skillBar[j]);   
+    console.log(skillBar[j]);
+    console.log(percentBar[j]);
+    var width = 0;
+    var id = setInterval(frame(j), 50);
+    function frame() {
+      if (width >= percentBar[j]) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        elem.innerHTML = width * 1  + '%';
+      }    
+    }
+  }
+}  
+*/
