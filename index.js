@@ -57,6 +57,7 @@ function writetitle(txt){
 
 function writecorps(txt) {
 	document.getElementById('corps').innerHTML = txt;
+  document.getElementsByClassName('middle').style.display = "none"; 
 }
 
 function html() {
