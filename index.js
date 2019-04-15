@@ -1,4 +1,4 @@
-var txtintro = "Acces database in progress . . .";
+var txtintro = "Touch screen or press enter . . .";
 var check = 0;
 
 function intro() {
@@ -11,7 +11,7 @@ function intro() {
 	(function(i) {
 		setTimeout(function() {
 			display.innerHTML += txtintro.charAt(i);
-			}, i * 40);
+			}, i * 120);
 		}(i));
 	}	
 }
@@ -22,7 +22,6 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
     if (key === 13 && check == 0) {
-    console.log(check); 
       var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
