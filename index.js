@@ -15,7 +15,7 @@ function intro() {
 	}	
 }
 
-document.querySelector('#intro').addEventListener('keypress', function (e) {
+document.querySelector('body').addEventListener('keypress', function (e) {
     var key = e.which || e.keyCode;
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
@@ -26,7 +26,6 @@ document.querySelector('#intro').addEventListener('keypress', function (e) {
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
     		document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
-        var validEnter = 1;
     	}
     	else alert('Verification failed. Please, try again !!');
     }
@@ -41,7 +40,6 @@ document.querySelector('body').addEventListener('touchstart', function () {
           document.getElementById('intro').style.display = 'none';
           document.getElementById('suite').style.display = 'block';
           document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
-          var validEnter = 1
         }  
       else alert('Verification failed. Please, try again !!');
 });
