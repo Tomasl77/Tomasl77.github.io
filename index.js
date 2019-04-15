@@ -1,4 +1,5 @@
 var txtintro = "Acces database in progress . . .";
+var check = 0;
 
 function intro() {
 	document.getElementById('intro').style.display = 'block';
@@ -20,12 +21,14 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
-    if (key === 13) { 
+    if (key === 13 && check == 0) {
+    console.log(check); 
       var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
     		document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+        check = 1;
     	}
     	else alert('Verification failed. Please, try again !!');
     }
@@ -40,6 +43,7 @@ document.querySelector('body').addEventListener('touchstart', function () {
           document.getElementById('intro').style.display = 'none';
           document.getElementById('suite').style.display = 'block';
           document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+          check = 1;
         }  
       else alert('Verification failed. Please, try again !!');
 });
