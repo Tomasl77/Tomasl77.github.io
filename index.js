@@ -32,7 +32,7 @@ document.querySelector('#intro').addEventListener('keypress', function (e) {
     }
 });
 
-document.querySelector('#intro').addEventListener('touchstart', function () {
+document.querySelector('body').addEventListener('touchstart', function () {
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
