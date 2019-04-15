@@ -38,6 +38,7 @@ document.querySelector('body').addEventListener('touchstart', function () {
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
+    if (check == 0) {
     var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
         if(question == ansnum){
           document.getElementById('intro').style.display = 'none';
@@ -46,6 +47,7 @@ document.querySelector('body').addEventListener('touchstart', function () {
           check = 1;
         }  
       else alert('Verification failed. Please, try again !!');
+    }
 });
 
 
