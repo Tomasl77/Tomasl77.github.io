@@ -383,7 +383,9 @@ button:active{
 	}
 	.titre{
 	font-size: 20px;
+	margin-bottom: 15px;
 	}
+
 }
 
 @media screen AND (max-height: 400px){
