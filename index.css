@@ -1,6 +1,6 @@
-
-
 /* For research, Ctrl+f and copy-paste:
+
+
 fonts : FONTS;
 windows onload : ONLOAD;
 after alert box: INTRO 2;
@@ -70,6 +70,11 @@ body {
 	justify-content: space-between;
 }
 
+#header a {
+    text-decoration: none;
+    color: red;
+}   
+
 #header img {
 	vertical-align: middle;
 }
@@ -112,7 +117,7 @@ body {
 ************************************/
 
 .middle {
-	margin-top:10%;
+	margin-top:20px;
 }
 
 #container {
@@ -138,9 +143,11 @@ body {
 }
 
 #mypic {
+	position: absolute;
 	height: 400px;
 	width: 300px;
-	margin: auto;
+	margin-left: 15%;
+	transform: translateX(-50%);
 	cursor: pointer;
 }
 
@@ -346,6 +353,8 @@ button:active{
 	}
 
 	#mypic {
+		margin: auto;
+		transform: translate(10%, 20%);
 		height: 300px;
 		width: 200px;
 	}
@@ -383,6 +392,10 @@ button:active{
 	}
 	
 	#mypic {
+		position: static;
+		margin: auto;
+		transform: translateX(0%);
+
 		height: 100px;
 		width: 75px;
 	}

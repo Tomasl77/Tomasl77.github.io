@@ -6,8 +6,7 @@
 	<title>LOBGEOIS Tomas</title>
 	<link rel="stylesheet" href="index.css">
 </head>
-<body>
-	<!-- <body onload = intro()> -->
+<body onload = intro()>
 	<div id="intro">
 
 	</div>
@@ -18,8 +17,10 @@
 		<div id="header">
 			<img src="./img/eyeonly.png" alt="for your eyes only" id="eye">
 			<p id = "headsimplon">
-				<span><img src="./img/simplon.png" alt="logo simplon" id="simplogo" title="SIMPLON"></span>
-				<span id = "simp">SIMPLON</span>
+				<a href="http://www.simplon.co" target="_blank">
+					<span><img src="./img/simplon.png" alt="logo simplon" id="simplogo" title="SIMPLON"></span>
+					<span id = "simp">SIMPLON</span>
+				</a>
 			</p>
 			<img src="./img/confidential.png" alt="confidential" id="confi">
 		</div>
@@ -107,9 +108,10 @@
 	
 			<img src="./img/project.svg" alt="projets" class="carre" onclick="writetitle('Projets r&eacute;alis&eacute;s'); writecorps('\
 				<p class=\'titre\'>Voici quelques-uns de mes projets :</p><br /><br />\
-				<div class=\'desc\'><p><a href=\'https://github.com/Tomasl77/2048\' target=_blank>Un 2048</a> (en collaboration, voir commentaire HTML)</p>\
-				<p><a href=\'https://github.com/Tomasl77/ecommerce\' target=_blank>Un site e-commerce</a> <a href=\'https://dav-and-co.000webhostapp.com\' target=_blank> (En ligne)</a> </p>\
-				<p><a href=\'https://github.com/Tomasl77/Forum\' target=_blank>Un forum</a></p><br />\
+				<div class=\'desc\'><p><a href=\'https://github.com/Tomasl77/Doctor\' target=_blank>Un Doctor Javascript</a> </p>\
+				<p><a href=\'https://github.com/Tomasl77/ecommerce\' target=_blank>Un site e-commerce</a></p>\
+				<p><a href=\'https://github.com/Tomasl77/Forum\' target=_blank>Un forum</a></p>\
+				<p><a href=\'https://github.com/Tomasl77/class-pasclass\' target=_blank>Intro Jquiery</a></p><br />\
 				<p>Vous pouvez trouver l\'intégralité de mes projets <a href=\'https://github.com/Tomasl77?tab=repositories\' target=_blank> ici </a></p>\
 				</div>')">
 
@@ -130,7 +132,7 @@
 			<div id="myfile" class="pane"> <!-- Start panes  -->
 
 				<div id="leftpane">
-					 <img src="./img/photo.png" alt="mypicture" id="mypic" onclick="window.open('img/photo.png')">
+					 <img src="./img/photo.png" alt="mypicture" id="mypic" title = "Click to open" onclick="window.open('img/photo.png')">
 				</div>
 				<div id="rightpane" class="pane">
 					<div id="infos">
