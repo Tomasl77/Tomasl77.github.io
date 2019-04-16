@@ -33,7 +33,7 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     }
 });
 
-document.querySelector('body').addEventListener('touchstart', function () {
+document.querySelector('body').addEventListener('click', function () {
     var fnum = Math.floor(Math.random() * 11);
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
@@ -61,7 +61,7 @@ function writecorps(txt) {
 }
 
 function html() {
-  var elem = document.getElementById("1");   
+  var elem = document.getElementById("barone");   
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
@@ -75,7 +75,7 @@ function html() {
   }
 }
 function css() {
-  var elem2 = document.getElementById("2");   
+  var elem2 = document.getElementById("bartwo");   
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
@@ -89,7 +89,7 @@ function css() {
   }
 }
 function js() {
-  var elem3 = document.getElementById("3");   
+  var elem3 = document.getElementById("barthree");   
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
@@ -103,7 +103,7 @@ function js() {
   }
 }
 function php() {
-  var elem4 = document.getElementById("4");   
+  var elem4 = document.getElementById("barfour");   
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
@@ -117,7 +117,7 @@ function php() {
   }
 }
 function sql() {
-  var elem5 = document.getElementById("5");   
+  var elem5 = document.getElementById("barfive");   
   var width = 0;
   var id = setInterval(frame, 50);
   function frame() {
