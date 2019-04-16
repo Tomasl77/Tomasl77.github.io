@@ -27,6 +27,7 @@ document.querySelector('body').addEventListener('keypress', function (e) {
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
     		document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+        document.body.style.cursor = "default";
         check = 1;
     	}
     	else alert('Verification failed. Please, try again !!');
@@ -43,6 +44,7 @@ document.querySelector('body').addEventListener('click', function () {
           document.getElementById('intro').style.display = 'none';
           document.getElementById('suite').style.display = 'block';
           document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
+          document.body.style.cursor = "default";
           check = 1;
         }  
       else alert('Verification failed. Please, try again !!');
