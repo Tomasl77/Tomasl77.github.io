@@ -1,12 +1,6 @@
 var txtintro = "Touch screen or press enter . . .";
 var check = 0;
-
-if (check == 1) {
-    document.getElementById('intro').style.display = 'none';
-    document.getElementById('suite').style.display = 'block';
-    document.body.style.backgroundImage = "url(./img/ep_naturalwhite.png) repeat";
-    document.body.style.cursor = "default";
-}else{
+//var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 function intro() {
 	document.getElementById('intro').style.display = 'block';
@@ -57,7 +51,7 @@ document.querySelector('body').addEventListener('click', function () {
       else alert('Verification failed. Please, try again !!');
     }
 });
-}
+
 
 function writetitle(txt){
 	document.getElementById('title').style.display = ('block');
