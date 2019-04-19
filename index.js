@@ -22,9 +22,9 @@ var isMobile = {
 };
 
 if(isMobile.any()) {
-  var txtintro = "Analysing Device . . . Please, touch screen"
+  var txtintro = "Analysing Device . . . Please, touch screen."
 } else{
-var txtintro = "Analysing Device . . .  Please, press enter . . .";
+var txtintro = "Analysing Device . . .  Please, press enter.";
 }
 
 var check = 0;
@@ -39,7 +39,7 @@ function intro() {
 	(function(i) {
 		setTimeout(function() {
 			display.innerHTML += txtintro.charAt(i);
-			}, i * 120);
+			}, i * 75);
 		}(i));
 	}	
 }
