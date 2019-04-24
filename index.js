@@ -50,7 +50,7 @@ document.querySelector('body').addEventListener('keypress', function (e) {
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
     if (key === 13 && check == 0) {
-      var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
+      var question = prompt("Human? Please answer this : \n"+fnum+"+"+snum+" =");
     	if(question == ansnum){
 	    	document.getElementById('intro').style.display = 'none';
     		document.getElementById('suite').style.display = 'block';
@@ -67,7 +67,7 @@ document.querySelector('body').addEventListener('click', function () {
     var snum = Math.floor(Math.random() * 11);
     var ansnum = fnum + snum;
     if (check == 0) {
-    var question = prompt("Checking humanity. Please answer this : \n"+fnum+"+"+snum+" =");
+    var question = prompt("Human? Please answer this : \n"+fnum+"+"+snum+" =");
         if(question == ansnum){
           document.getElementById('intro').style.display = 'none';
           document.getElementById('suite').style.display = 'block';
